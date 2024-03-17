@@ -1,0 +1,92 @@
+[
+    {
+        "id":1,
+        "name":"Arsenal Kit",
+        "price":1250,
+        "imgUrl":"/src/assests/arsenal.jpg"
+    },
+    {
+        "id":2,
+        "name":"Zamalek Kit",
+        "price":1250,
+        "imgUrl":"/src/assests/zamalek.jpg"
+    },
+    {
+        "id":3,
+        "name":"Liverpool Kit",
+        "price":890,
+        "imgUrl":"/src/assests/liverpool.jpg"
+        
+    },
+    {
+        "id":4,
+        "name":"Manchester United Kit",
+        "price":900,
+        "imgUrl":"/src/assests/utd.jpg"
+    },
+    {
+        "id":5,
+        "name":"Chelsea Kit",
+        "price":450,
+        "imgUrl":"/src/assests/chelsea.jpg"
+    },
+    {
+        "id":6,
+        "name":"Tottenham Kit",
+        "price":300,
+        "imgUrl":"/src/assests/tottenham.jpg"
+    },
+    {
+        "id":7,
+        "name":"Barcelona Kit",
+        "price":870,
+        "imgUrl":"/src/assests/barcelona.jpg"
+    },
+    {
+        "id":8,
+        "name":"Real Madrid Kit",
+        "price":1000,
+        "imgUrl":"/src/assests/real madrid.jpg"
+    },
+    {
+        "id":9,
+        "name":"AS Roma Kit",
+        "price":700,
+        "imgUrl":"/src/assests/roma.jpg"
+    },
+    {
+        "id":10,
+        "name":"Cameroon Kit",
+        "price":1200,
+        "imgUrl":"/src/assests/Cameroon.jpg"
+    },
+    {
+        "id":11,
+        "name":"Juventus Kit",
+        "price":870,
+        "imgUrl":"/src/assests/juventus.jpg"
+    },
+    {
+        "id":12,
+        "name":"AC Milan Kit",
+        "price":970,
+        "imgUrl":"/src/assests/milan.jpg"
+    },
+    {
+        "id":13,
+        "name":"Inter Milan Kit",
+        "price":870,
+        "imgUrl":"/src/assests/inter.jpg"
+    },
+    {
+        "id":14,
+        "name":"Bayern Kit",
+        "price":840,
+        "imgUrl":"/src/assests/bayern.jpg"
+    },{
+        "id":15,
+        "name":"BVB Kit",
+        "price":450,
+        "imgUrl":"/src/assests/bvb.jpg"
+    }
+]

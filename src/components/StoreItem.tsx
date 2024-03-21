@@ -27,7 +27,7 @@ export function StoreItem ({id, name , price , imgUrl}:
                 height="460px"
                 style={{objectFit: "cover"}}
                 />
-                <Card.Body className="d-flex flex-column bg-light">
+                <Card.Body className="d-flex flex-column  bg-white">
                     <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
                         <span className="fs-1.5 fw-bold">{name}</span>
                         <span className="ms-2 text-muted fw-bold">{formatCurrency(price)}</span>

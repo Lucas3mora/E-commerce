@@ -1,26 +1,48 @@
-import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
+import { Button, Image , Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+
+
 
 export function Navbar() {
     const { openCart, cartQuantity } = useShoppingCart()
     return (
-      <NavbarBs sticky="top" className="bg-light shadow-sm mb-3">
+      
+      <NavbarBs fixed="top" bg="image" style={{ backgroundImage: `url('src/assests/bg.jpeg')` }} >
+        
         <Container>
-          <Nav className="me-auto">
+        
+          
+          <Nav className=" d-flex">
+            <Image
+            src={"../src/assests/Mediakits-Logos-Blue.png   "}
+            className="mt-1 d-grid"
+            alt="England Flag"
             
-            <Nav.Link className="fst-normal fw-bold fs-4" to="/" as={NavLink}>
+            width="200px"
+            
+            height="auto"
+            
+            fluid
+            
+            />
+            
+            
+            <Nav.Link  className=" position-relative start-50 fst-normal fw-bold fs-2 text-white" to="/" as={NavLink}>
               Store
             </Nav.Link>
-            <Nav.Link className="fst-normal fw-bold fs-4" to="/about" as={NavLink}>
+            
+            <Nav.Link className="position-relative start-50 fst-normal fw-bold fs-2 text-white" to="/about" as={NavLink}>
               About
             </Nav.Link>
+            
           </Nav>
           
+          
           {cartQuantity === 0 && (
-            <Button
+            <Button 
               onClick={openCart}
-              style={{ width: "3rem", height: "3rem", position: "relative" }}
+              style={{ width: "3rem", height: "3rem", position: "relative"  }}
               variant="outline-primary"
               className="rounded-circle"
             >
@@ -33,20 +55,13 @@ export function Navbar() {
               </svg>
   
               <div
-                className="rounded-circle d-flex justify-content-center align-items-center"
-                style={{
-                  color: "white",
-                  width: "0rem",
-                  height: "0rem",
-                  position: "absolute",
-                  bottom: 0,
-                  right: 0,
-                  transform: "translate(25%, 25%)",
-                }}
+                className=" d-none"
+                
               >
                 {cartQuantity}
               </div>
             </Button>
+            
           )}
           {cartQuantity > 0 && (
             <Button
@@ -78,8 +93,14 @@ export function Navbar() {
                 {cartQuantity}
               </div>
             </Button>
+            
           )}
+          
         </Container>
+        
       </NavbarBs>
+      
     )
-  }
+    
+  } 
+  

@@ -1,16 +1,17 @@
-import { Button, Card } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import { Button , Card , Container } from "react-bootstrap"
 import { formatCurrency } from "../utilities/formatCurrency"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 
-type StoreItemProps = {
+type StoreItemDetailsProps = {
     id: number,
     name: string,
     price: number,
-    imgUrl: string
+    imgUrl: string,
+    dis: any ,
 }
-export function StoreItem ({id, name , price , imgUrl}:
-    StoreItemProps) {
+export function StoreItemDetails ({id, name , price , imgUrl , dis}:
+    StoreItemDetailsProps) {
+        
         const {
             getItemQuantity,
             increaseCartQuantity,
@@ -18,25 +19,33 @@ export function StoreItem ({id, name , price , imgUrl}:
             removeFromCart,
         } = useShoppingCart()
         const quantity = getItemQuantity(id)
+        
         return (
-            <Card>
-              <Link to={`/details/${id}`}>
+            
+            <Card className="border-2 border-dark ms-5 my-5 py-5 w-75 h-0">
+                <Container  className="d-flex">
+             
                 <Card.Img 
                 variant="top"
                 src={imgUrl}
-                height="460px"
+                height="280px"
+                className="d-flex"
+                
+                
+                
                 style={{objectFit: "cover"}}
                 >
                 </Card.Img>
-              </Link>
+              
                 <Card.Body className="d-flex flex-column  bg-white">
                     <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
-                        <span className="fs-1.5 fw-bold">{name}</span>
+                        <span className="fs-1.5 fw-bold ms-5">{name}</span>
                         <span className="ms-2 text-muted fw-bold">{formatCurrency(price)}</span>
                     </Card.Title>
+                    <Card.Text className="fs-5 d-flex ms-5">{dis}</Card.Text>
                     <div className="mt-auto">
           {quantity === 0 ? (
-            <Button className="w-100" onClick={()=> increaseCartQuantity(id)}>
+            <Button className="w-75 ms-5 position-center start-50" onClick={()=> increaseCartQuantity(id)}>
               + Add To Cart
             </Button>
           ) : (
@@ -71,7 +80,16 @@ export function StoreItem ({id, name , price , imgUrl}:
           )}
         </div>
       </Card.Body>
+      </Container>
+     
       
     </Card>
+    
+    
+    
+      
+    
   )
+  
+
 }

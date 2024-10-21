@@ -9,7 +9,7 @@ type CartItemProps = {
 }
 
 export function CartItem({ id, quantity }: CartItemProps) {
-  const { removeFromCart } = useShoppingCart()
+  const { removeFromCart , decreaseCartQuantity , increaseCartQuantity } = useShoppingCart()
   const item = storeItems.find(i => i.id === id)
   if (item == null) return null
 
@@ -24,19 +24,30 @@ export function CartItem({ id, quantity }: CartItemProps) {
           {item.name}{" "}
           {quantity > 1 && (
             <span className="text-muted fst-italic fw-bold" style={{ fontSize: ".65rem" }}>
-              x{quantity}
+              
             </span>
           )}
         </div>
-        <div className="text-muted fst-italic fw-bold" style={{ fontSize: ".75rem" }}>
+        <div className="text-muted  fw-bold" style={{ fontSize: ".75rem" }}>
           {formatCurrency(item.price)}
         </div>
+        <div
+                className="d-flex align-items-center justify-content-center d-flex"
+                style={{ gap: ".3rem", fontSize: ".75rem"}}
+              >
+                <Button size="sm" onClick={() => decreaseCartQuantity(id)}>-</Button>
+                <div>
+                  <span className="">{quantity}</span> 
+                </div>
+                <Button size="sm" onClick={() => increaseCartQuantity(id)}>+</Button>
+      </div>
       </div>
       <div> {formatCurrency(item.price * quantity)}</div>
+     
       <Button
         
         variant="outline-primary"
-        className="rounded-circle" 
+        className="rounded-none" 
         
         
         onClick={() => removeFromCart(item.id)}
@@ -47,6 +58,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
 </svg>
         &times;
       </Button>
+      
     </Stack>
   )
 }

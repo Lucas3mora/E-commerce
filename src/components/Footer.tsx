@@ -7,8 +7,8 @@ interface CustomFooterProps {}
 
 const Footer: React.FC<CustomFooterProps> = () => {
   return (
-    <footer className="d-flex  py-5 rounded-top-5 bg-image"style={{ backgroundImage: `url('src/assests/bg.jpeg')`}}>
-      <Container>
+    <footer className="d-flex  py-5 rounded-top-5 bg-image"style={{ backgroundImage: `url('/src/assests/bg.jpeg')`}}>
+      <Container >
         
         <Row>
           <Col lg={11}>

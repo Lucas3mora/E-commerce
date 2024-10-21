@@ -8,7 +8,7 @@ export function Navbar() {
     const { openCart, cartQuantity } = useShoppingCart()
     return (
       
-      <NavbarBs fixed="top" bg="image" style={{ backgroundImage: `url('src/assests/bg.jpeg')` }} >
+      <NavbarBs fixed="top" bg="image" style={{ backgroundImage: `url('/src/assests/bg.jpeg')` }} >
         
         <Container>
         
@@ -28,12 +28,18 @@ export function Navbar() {
             />
             
             
-            <Nav.Link  className=" position-relative start-50 fst-normal fw-bold fs-2 text-white" to="/" as={NavLink}>
+            <Nav.Link  className=" position-relative  ms-5 fst-normal fw-bold fs-4 text-white" to="/" as={NavLink}>
               Store
             </Nav.Link>
             
-            <Nav.Link className="position-relative start-50 fst-normal fw-bold fs-2 text-white" to="/about" as={NavLink}>
+            <Nav.Link className="position-relative mx-5  fst-normal fw-bold fs-4 text-white" to="/about" as={NavLink}>
               About
+            </Nav.Link>
+            <Nav.Link className="position-relative   fst-normal fw-bold fs-4 text-white" to="/contact" as={NavLink}>
+              Contact
+            </Nav.Link>
+            <Nav.Link className="position-relative  mx-5 fst-normal fw-bold fs-4 text-white" to="/blog" as={NavLink}>
+              Blog
             </Nav.Link>
             
           </Nav>

@@ -3,90 +3,108 @@
         "id":1,
         "name":"Arsenal Kit",
         "price":1250,
-        "imgUrl":"/src/assests/arsenal.jpg"
+        "imgUrl":"/src/assests/arsenal.jpg",
+        "dis":"  • Arsenal home jersey for the 2002/03 and 2003/04 seasons, designed by Nike. • The design for this jersey consists predominantly of red color, with white sleeves and other minor details in the same color appearing on different parts of it. The club won the Premier League during the 2003/04 season without suffering a single defeat using this kit."
+        
+        
     },
     {
         "id":2,
         "name":"Zamalek Kit",
         "price":1250,
-        "imgUrl":"/src/assests/zamalek.jpg"
+        "imgUrl":"/src/assests/zamalek.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":3,
         "name":"Liverpool Kit",
         "price":890,
-        "imgUrl":"/src/assests/liverpool.jpg"
+        "imgUrl":"/src/assests/liverpool.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
         
     },
     {
         "id":4,
         "name":"Manchester Utd Kit",
         "price":900,
-        "imgUrl":"/src/assests/utd.jpg"
+        "imgUrl":"/src/assests/utd.jpg",
+        "dis":" • Manchester United 2004/05 Home Jersey designed by nike • The design for this unique jersey consists predominantly of red color, with a black V-shape appearing on the top front part of the jersey."
+        
     },
     {
         "id":5,
         "name":"Chelsea Kit",
         "price":450,
-        "imgUrl":"/src/assests/chelsea.jpg"
+        "imgUrl":"/src/assests/chelsea.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":6,
         "name":"Tottenham Kit",
         "price":300,
-        "imgUrl":"/src/assests/tottenham.jpg"
+        "imgUrl":"/src/assests/tottenham.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":7,
         "name":"Barcelona Kit",
         "price":870,
-        "imgUrl":"/src/assests/barcelona.jpg"
+        "imgUrl":"/src/assests/barcelona.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":8,
         "name":"Real Madrid Kit",
         "price":1000,
-        "imgUrl":"/src/assests/real madrid.jpg"
+        "imgUrl":"/src/assests/real madrid.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":9,
         "name":"AS Roma Kit",
         "price":700,
-        "imgUrl":"/src/assests/roma.jpg"
+        "imgUrl":"/src/assests/roma.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":10,
         "name":"Cameroon Kit",
         "price":1200,
-        "imgUrl":"/src/assests/Cameroon.jpg"
+        "imgUrl":"/src/assests/Cameroon.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":11,
         "name":"Juventus Kit",
         "price":870,
-        "imgUrl":"/src/assests/juventus.jpg"
+        "imgUrl":"/src/assests/juventus.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":12,
         "name":"AC Milan Kit",
         "price":970,
-        "imgUrl":"/src/assests/milan.jpg"
+        "imgUrl":"/src/assests/milan.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":13,
         "name":"Inter Milan Kit",
         "price":870,
-        "imgUrl":"/src/assests/inter.jpg"
+        "imgUrl":"/src/assests/inter.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },
     {
         "id":14,
         "name":"Bayern Kit",
         "price":840,
-        "imgUrl":"/src/assests/bayern.jpg"
+        "imgUrl":"/src/assests/bayern.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     },{
         "id":15,
         "name":"BVB Kit",
         "price":450,
-        "imgUrl":"/src/assests/bvb.jpg"
+        "imgUrl":"/src/assests/bvb.jpg",
+        "dis":" Argentina 2021/22 Home Jersey with Messi 10 printing - Economical Players' Edition "
     }
 ]
